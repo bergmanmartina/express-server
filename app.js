@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
-app.get('/', function (req, res) {
-res.send('Hello World!')
+app.get('/', (req, res) => {
+	console.log ('nu är vi här')
+res.send('Hello cats')
 })
-app.listen(3000, function () {
-console.log('App acting on port 3000! Visit localhost:3000 in Chrome')
+app.listen(3000, (req, res) => {
+console.log('open localhost:3000!')
 })
